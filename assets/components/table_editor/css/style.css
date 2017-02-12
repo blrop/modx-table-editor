@@ -1,0 +1,91 @@
+.table-editor-wrapper {
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.table-editor-wrapper h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.table-editor-wrapper table {
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+    width: 100%;
+}
+
+.table-editor-wrapper table th {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #aaa;
+}
+
+.table-editor-wrapper table td {
+    padding: 5px;
+    border: 1px solid #aaa;
+    text-align: center;
+}
+
+.table-editor-wrapper input[type="date"],
+.table-editor-wrapper input[type="time"] {
+    margin-bottom: 3px;
+}
+
+.table-editor-wrapper .button {
+    display: inline-block;
+    padding: 3px 10px;
+    cursor: pointer;
+    color: #eee;
+    font-weight: bold;
+}
+
+.table-editor-wrapper .button:active {
+    position: relative;
+    left: 2px;
+    top: 2px;
+    box-shadow: none !important;
+}
+
+.table-editor-wrapper .button.button--save {
+    box-shadow: 2px 2px 0 0 #003306;
+    background: #005D0B;
+}
+
+.table-editor-wrapper .button.button--save:active {
+    background: #003306;
+}
+
+.table-editor-wrapper .button.button--delete {
+    box-shadow: 2px 2px 0 0 #003306;
+    background: #5D000F;
+}
+
+.table-editor-wrapper .button.button--delete:active {
+    background: #330008;
+}
+
+.table-editor-wrapper tr.js-processing {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.table-editor-wrapper tr.js-processing .button {
+    display: none;
+}
+
+.table-editor-wrapper tr .processing-indicator {
+    display: none;
+}
+
+.table-editor-wrapper tr.js-processing .processing-indicator {
+    width: 16px;
+    height: 16px;
+    background: url(../images/loading.gif) no-repeat center center;
+    display: inline-block;
+}
+
+.table-editor-wrapper tr.add-new {
+    background: #aaa;
+}
